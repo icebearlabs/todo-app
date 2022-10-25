@@ -1,0 +1,32 @@
+@import "./fonts.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, Roboto, sans-serif;
+}
+
+* {
+  font-family: Poppins, Roboto, sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen bg-blue-100;
+  }
+}
+
+@layer components {
+  .headline {
+    @apply text-3xl font-semibold text-gray-700;
+  }
+
+  .todoItem {
+    @apply gap-4 px-6 flex items-center justify-center h-16 rounded-md bg-slate-100 outline-none shadow-sm;
+  }
+}
