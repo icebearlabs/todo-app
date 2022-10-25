@@ -65,7 +65,8 @@ const cleanupTodos = () => {
 };
 
 const getTodos = (): TodoVault => {
-  return JSON.parse(localStorage.getItem(TODOS_KEY));
+  const todos = JSON.parse(localStorage.getItem(TODOS_KEY));
+  return todos ?? [];
 };
 
 const getCurrentTodos = (): Todo[] => {
