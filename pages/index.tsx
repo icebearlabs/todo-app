@@ -1,7 +1,16 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import TodoHandler from "../components/todohandler";
+import { localStorageUtils } from "../lib/storage";
 
 export default function Home() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    localStorageUtils.cleanupTodos();
+    setLoaded(true);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -10,9 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <TodoHandler />
-      </main>
+      <main>{loaded && <TodoHandler />}</main>
 
       <footer></footer>
     </div>

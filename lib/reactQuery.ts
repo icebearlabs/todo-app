@@ -1,3 +1,4 @@
 export const QUERIES = {
   GET_TODOS: "GET_TODOS",
+  GET_PAST_TODOS: "GET_PAST_TODOS",
 };

@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import CurrentTodos from "./currentTodos";
 import YesterdaysTodos from "./yesterdaysTodos";
 import { Page, PageContext } from "../lib/pageContext";
 
 const TodoHandler = () => {
   const { page } = useContext(PageContext);
+
+  useEffect(() => {}, []);
 
   return (
     <>
