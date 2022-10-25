@@ -16,7 +16,7 @@ const CurrentTodos = () => {
           className="flex items-center gap-2 pt-8 cursor-pointer hover:opacity-70"
           onClick={() => setPage(Page.YESTERDAY)}
         >
-          Yesterday's Todos
+          Yesterday&apos;s Todos
           <picture className="w-[12px] h-[12px] -mt-[2px]">
             <img src="/img/arrow-right.svg" />
           </picture>

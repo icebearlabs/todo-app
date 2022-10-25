@@ -47,7 +47,7 @@ const PastTodolist = () => {
           <div className="flex flex-col h-[300px] justify-center rounded-md items-center bg-blue-200 shadow-sm gap-8">
             <SmileIcon className="fill-slate-500 w-[48px] h-[48px]" />
             <label className="px-4 text-center text-slate-500">
-              You don't have any left over todos from yesterday
+              You don&apos;t have any left over todos from yesterday
             </label>
           </div>
         )}

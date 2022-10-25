@@ -6,7 +6,9 @@ const YesterdaysTodos = () => {
   const { setPage } = useContext(PageContext);
   return (
     <div className="flex flex-col min-h-screen p-4">
-      <h1 className="pb-8 text-center headline flex-0">Yesterday's Todos</h1>
+      <h1 className="pb-8 text-center headline flex-0">
+        Yesterday&apos;s Todos
+      </h1>
       <div className="flex-1">
         <PastTodolist />
       </div>
