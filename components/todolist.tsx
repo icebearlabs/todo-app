@@ -77,7 +77,7 @@ const Todolist = () => {
         {todos.map((todo) => (
           <li className="todoItem" key={`${todo.id}`}>
             <div
-              className="w-[24px] h-[24px]"
+              className="w-[24px] h-[24px] cursor-pointer"
               onClick={() => handleCheck(todo)}
             >
               {todo.checked ? (
